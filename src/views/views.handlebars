@@ -1,0 +1,99 @@
+<div class="container" style="background-color: rgb(250, 250, 250);">
+{{#each data}}
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{name}}</h1>
+      <p>Web Developer</p>
+      <hr />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Contact Information</h3>
+      <p>Email: {{email}}</p>
+      <p>Phone: {{phone}}</p>
+      <p>Address: {{address}}</p>
+    </div>
+    <div class="col-md-6">
+         <h3>Education</h3>
+      <ul>
+        <li>
+          <strong>Primary Studies:  </strong>{{Studies1}}
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <strong>Secondary Studies:  </strong>{{Studies2}}
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <strong>University Studies  </strong>{{Studies3}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  {{!-- <div class="row">
+    <div class="col-md-12">
+   
+    </div>
+  </div> --}}
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Work Experience</h3>
+      <ul>
+        <li>
+          <h4>Web Developer, XYZ Company</h4>
+          <p>June 2015 - Present</p>
+          <ul>
+            <li>
+              Develop and maintain company website and web applications
+            </li>
+            <li>
+              Collaborate with team members to deliver projects on time and
+              within budget
+            </li>
+            <li>
+              Implement new features and functionality to improve user
+              experience
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Web Developer, ABC Company</h4>
+          <p>June 2012 - May 2015</p>
+          <ul>
+            <li>
+              Develop and maintain company website and web applications
+            </li>
+            <li>
+              Collaborate with team members to deliver projects on time and
+              within budget
+            </li>
+            <li>
+              Implement new features and functionality to improve user
+              experience
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Bootstrap</li>
+        <li>PHP</li>
+        <li>WordPress</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+{{/each}}
