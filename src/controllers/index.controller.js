@@ -17,10 +17,11 @@ export const inicio = async (req, res, rows) => {
 };
 export const viewsCV = async (req, res, rows) => {
   try {
-    const [rows] = await pool.query("SELECT * FROM profile JOIN Studies JOIN Experiences JOIN References1");
+    const [rows] = await pool.query("SELECT * FROM profile JOIN Studies JOIN Experiences JOIN References1 JOIN Skills");
     res.render("views", {
       data: rows,
     });
+
    
 
   } catch (error) {

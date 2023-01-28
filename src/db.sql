@@ -10,8 +10,9 @@ CREATE Table profile(
     phone VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     address VARCHAR(255) NOT NULL,
+    occupation VARCHAR(255) NOT NULL,
     PRIMARY KEY(id)
-)
+);
 
 
 CREATE TABLE Studies(
@@ -39,7 +40,7 @@ CREATE TABLE Experiences(
 
 -- References
 
-CREATE TABLE References(
+CREATE TABLE References1(
     id INT NOT NULL AUTO_INCREMENT,
     References1 VARCHAR(255) NOT NULL,
     References11 VARCHAR(255) NOT NULL,
@@ -48,7 +49,7 @@ CREATE TABLE References(
     References3 VARCHAR(255) NOT NULL,
     References33 VARCHAR(255) NOT NULL,
     References4 VARCHAR(255) NOT NULL,
-    References43 VARCHAR(255) NOT NULL,
+    References44 VARCHAR(255) NOT NULL,
     PRIMARY KEY(id)
 );
 

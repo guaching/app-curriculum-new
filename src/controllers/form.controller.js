@@ -11,11 +11,28 @@ export const createsCV = async (req, res) => {
 
 export const createCV = async (req, res) => {
   try {
-    const { name, identific, date, phone, email, address } = req.body;
+    const { name, identific, date, phone, email, address, occupation } = req.body;
 
     const [rows] = await pool.query(
-      "INSERT INTO profile (name, identific, date, phone, email, address) VALUES (?, ?, ?, ?, ?, ?)",
-      [name, identific, date, phone, email, address]
+      "INSERT INTO profile (name, identific, date, phone, email, address, occupation) VALUES (?, ?, ?, ?, ?, ?, ?)",
+      [name, identific, date, phone, email, address, occupation]
+    );
+
+    console.log(rows);
+
+    return res.render("skills");
+  } catch (err) {
+    res.status(500).json(err);
+  }
+};
+
+export const cvSkills = async (req, res) => {
+  try {
+    const { Skills1, Skills2, Skills3, Skills4 } = req.body;
+
+    const [rows] = await pool.query(
+      "INSERT INTO Skills (Skills1, Skills2, Skills3, Skills4) VALUES (?, ?, ?, ?)",
+      [Skills1, Skills2, Skills3, Skills4]
     );
 
     console.log(rows);
@@ -25,6 +42,8 @@ export const createCV = async (req, res) => {
     res.status(500).json(err);
   }
 };
+
+
 
 export const cvEstudy = async (req, res) => {
   try {
@@ -82,11 +101,11 @@ export const cvRefer = async (req, res) => {
       References3,
       References33,
       References4,
-      References44,
+      References43,
     } = req.body;
 
     const [rows] = await pool.query(
-      "INSERT INTO References1 (References1, References11, References2, References22, References3, References33, References4, References44) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+      "INSERT INTO References1 (References1, References11, References2, References22, References3, References33, References4, References43) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
       [
         References1,
         References11,
@@ -95,7 +114,7 @@ export const cvRefer = async (req, res) => {
         References3,
         References33,
         References4,
-        References44,
+        References43,
       ]
     );
     console.log(req.body);
