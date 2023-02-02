@@ -4,6 +4,7 @@ USE curriculum;
 
 CREATE Table profile(
     id INT NOT NULL AUTO_INCREMENT,
+    nameImg VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
     identific VARCHAR(255) NOT NULL,
     date VARCHAR(255) NOT NULL,
