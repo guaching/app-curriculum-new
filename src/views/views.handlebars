@@ -1,0 +1,110 @@
+{{#each data}}
+<br><br>
+<div class="container container-view">
+  {{!-- background-color: rgb(250, 250, 250); --}}
+
+  <div class="row text-center">
+    <div class="col-md-12">
+      <img class="img" src="/img/{{nameImg}}" alt="img">
+      <h1>{{name}}</h1>
+      <h4>{{occupation}}</h4>
+      <hr />
+    </div>
+  </div>
+  <div class="row text-center">
+    <div class="col-md-6">
+      <h3 class="list-group" list-group>Contact Information</h3>
+      <p class="list-group-item d-flex justify-content-between align-items-start">Email: {{email}}</p>
+      <p class="list-group-item d-flex justify-content-between align-items-start">Phone: {{phone}}</p>
+      <p class="list-group-item d-flex justify-content-between align-items-start">Address: {{address}}</p>
+    </div>
+    <div class="col-md-6">
+         <h3>Education</h3>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>Primary Studies:  </strong>{{Studies1}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>Secondary Studies:  </strong>{{Studies2}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>University Studies  </strong>{{Studies3}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  {{!-- <div class="row">
+    <div class="col-md-12">
+   
+    </div>
+  </div> --}}
+  <hr><br>
+  <div class="row text-center">
+    <div class="col-md-6">
+      <h3>Work Experience</h3>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>{{Experiences1}}:  </strong>{{Experiences11}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>{{Experiences2}}:  </strong>{{Experiences22}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>{{Experiences3}}:  </strong>{{Experiences33}}
+        </li>
+      </ul>
+          <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+         <strong>{{Experiences4}}:  </strong>{{Experiences44}}
+        </li>
+      </ul>
+    </div>
+      <div class="col-md-6">
+      <h3>Personal References</h3>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>{{References1}}:  </strong>{{References11}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>{{References2}}:  </strong>{{References22}}
+        </li>
+      </ul>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+          <strong>{{References3}}:  </strong>{{References33}}
+        </li>
+      </ul>
+          <ul class="list-group">
+        <li class="list-group d-flex justify-content-between align-items-start">
+         <strong>{{References4}}:  </strong>{{References43}}
+        </li>
+      </ul>
+    </div>
+  </div>
+  <hr><br>
+  <div class="row text-center">
+    <div class="col-md-6">
+      <h3>Skills</h3>
+      <ul class="list-group">
+        <li class="list-group d-flex justify-content-between">{{Skills1}}</li>
+        <li class="list-group d-flex justify-content-between">{{Skills2}}</li>
+        <li class="list-group d-flex justify-content-between">{{Skills3}}</li>
+        <li class="list-group justify-content-between">{{Skills4}}</li>
+      </ul>
+    </div>
+
+  </div>
+</div><br><br><br>
+{{/each}}
+
+
