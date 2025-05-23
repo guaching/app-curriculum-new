@@ -4,11 +4,11 @@ import dotenv from 'dotenv';
 dotenv.config(); //carga variables del .env
 
 export const pool = createPool({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    port: process.env.PORT || 3306,
-    database: process.env.DATABASE,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    port: process.env.DB_PORT || 3306,
+    database: process.env.DB_DATABASE,
     ssl: {
         rejectUnauthorized: false // Necesario para Railway u otros servicios CLoud
     }
